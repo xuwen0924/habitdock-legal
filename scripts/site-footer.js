@@ -1,7 +1,7 @@
 (() => {
   const DEFAULT_LANGUAGE = "en";
   const CHINESE_LANGUAGE = "zh-CN";
-  const FALLBACK_FOOTER = "Habitgo · © 2026 XuWen";
+  const FALLBACK_FOOTER = "HabitFuel · © 2026 XuWen";
   const locales = window.HABITGO_LOCALES || {};
 
   const normalizeLanguage = (value) => {
