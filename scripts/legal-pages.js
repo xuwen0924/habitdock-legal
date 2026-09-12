@@ -1,6 +1,6 @@
 (() => {
   const LIGHT_THEME_COLOR = "#F2F7FB";
-  const DARK_THEME_COLOR = "#233355";
+  const DARK_THEME_COLOR = "#26334D";
   const DEFAULT_LANGUAGE = "en";
   const CHINESE_LANGUAGE = "zh-CN";
   const STORAGE_KEY = "habitgo.language";
