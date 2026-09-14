@@ -1,8 +1,8 @@
 (() => {
   const DEFAULT_LANGUAGE = "en";
   const CHINESE_LANGUAGE = "zh-CN";
-  const FALLBACK_FOOTER = "HabitDock · © 2026 XuWen";
-  const locales = window.HABITGO_LOCALES || {};
+  const FALLBACK_FOOTER = "WowCheck · © 2026 XuWen";
+  const locales = window.WOWCHECK_LOCALES || {};
 
   const normalizeLanguage = (value) => {
     if (typeof value !== "string") return null;
@@ -14,7 +14,7 @@
 
   const readStoredLanguage = () => {
     try {
-      return localStorage.getItem("habitgo.language");
+      return localStorage.getItem("wowcheck.language");
     } catch (_error) {
       return null;
     }
@@ -56,7 +56,7 @@
     },
   ];
 
-  document.querySelectorAll("[data-habitgo-site-footer]").forEach((mount) => {
+  document.querySelectorAll("[data-wowcheck-site-footer]").forEach((mount) => {
     const nav = document.createElement("nav");
     nav.className = "resources";
     nav.setAttribute(

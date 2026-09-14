@@ -1,2 +1,2 @@
-# habitgo-legal
-habitgo legal
+# wowcheck-legal
+wowcheck legal

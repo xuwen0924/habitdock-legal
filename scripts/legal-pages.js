@@ -3,7 +3,7 @@
   const DARK_THEME_COLOR = "#26334D";
   const DEFAULT_LANGUAGE = "en";
   const CHINESE_LANGUAGE = "zh-CN";
-  const STORAGE_KEY = "habitgo.language";
+  const STORAGE_KEY = "wowcheck.language";
   const html = document.documentElement;
   const params = new URLSearchParams(window.location.search);
   const colorScheme = window.matchMedia("(prefers-color-scheme: dark)");
@@ -45,7 +45,7 @@
 
   const readStoredLanguage = () => {
     try {
-      return localStorage.getItem("habitgo.language");
+      return localStorage.getItem("wowcheck.language");
     } catch (_error) {
       return null;
     }
@@ -64,7 +64,7 @@
     readSystemLanguage() ||
     DEFAULT_LANGUAGE;
 
-  const locales = window.HABITGO_LEGAL_LOCALES || {};
+  const locales = window.WOWCHECK_LEGAL_LOCALES || {};
   const page = html.dataset.page;
 
   const translate = (key) =>
