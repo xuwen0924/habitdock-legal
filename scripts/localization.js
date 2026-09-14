@@ -1,8 +1,8 @@
 (() => {
   const DEFAULT_LANGUAGE = "en";
   const CHINESE_LANGUAGE = "zh-CN";
-  const STORAGE_KEY = "habitgo.language";
-  const locales = window.HABITGO_LOCALES || {};
+  const STORAGE_KEY = "wowcheck.language";
+  const locales = window.WOWCHECK_LOCALES || {};
 
   const normalizeLanguage = (value) => {
     if (typeof value !== "string") return null;
